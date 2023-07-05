@@ -7,7 +7,7 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.2'
+gem 'rails', '~> 6.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -41,20 +41,14 @@ group :development, :test do
   gem 'byebug', platform: :mri
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
-  gem "watir-rails"
 
   gem 'rake'
   gem 'rspec', '~> 3.5.0'
   gem 'rspec-rails'
-  gem 'watir', '= 6.2.1'
-  gem 'watir_drops', ['~> 0.7', '> 0.7.0']
-  gem 'watir_model'
-  gem 'require_all'
   gem 'parallel_split_test'
-  gem 'sauce_whisk'
   gem 'faker'
-  gem 'data_magic'
-  gem 'webdrivers'
+
+  gem 'mime-types', '~> 3.4.1'
 end
 
 group :development do
@@ -64,11 +58,10 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'saucer'
 end
 
 group :production do
-  gem 'pg', '~> 0.20'
+  gem 'pg', '~> 0.21'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
